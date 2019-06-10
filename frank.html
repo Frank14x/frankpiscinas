@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	
+
+    <script type="js/modernizr-custom.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+      
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Josefin+Sans|Open+Sans|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="css/fuentes.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/Diseños.css">	
+	<title>Frank </title>
+	
+</head>
+
+  <body id="top-web">
+		
+	<HEADER>	
+				<H1>
+					<a href="index.html">
+						<figure>
+							<img src="img/logoo.JPG">
+						</figure>
+					</a> 
+					<a href="index.html.html">Frank Piscina.</a>
+				</H1>
+				
+	<NAV ID="ioMenu">
+			<figure id ="showMenu" class="ioMenuMovil" onclick="DisplayMenu()"> 
+					<img src="img/MENU.png">
+			</figure>
+
+			<div id="card_menu"> 
+				<figure id ="hideMenu" class="ioMenuMovil" onclick="DisplayMenu()"> 
+					<img src="img/EXIT.png"></figure>
+
+					<figure id="logo_menu"> <img src="img/Logo final..png"></figure>
+				
+				<ul>
+					<ol> 
+						<a onclick=" navSect('home')" href="#">Home.</a> 
+					</ol>
+					<ol>
+					 	<a onclick=" navSect('servicio')" href="#"> Servicios.</a>  
+					</ol>
+					<ol> 
+						<a onclick=" navSect('about')" href="#">Nosotros.</a> 
+					</ol>
+					<ol>
+				    	<a onclick=" navSect('blog')" href="#"> Blog.</a>
+				    </ol>
+			  	     <ol>
+					 	<a onclick=" navSect('galeria')" href="#"> Galeria.</a>
+				    </ol>
+			  	    <ol>  
+					 	<a onclick=" navSect('contacto')" href="#">Contacto.</a>
+				    </ol>	
+				</ul>   			
+		   </div>
+	</NAV>
+        <span id="antes" onclick="dSection('prev')" class="carousel-control-prev-icon" aria-hidden="true"></span>
+<!--		<div id="antes" onclick="dSection('prev')"> <img src="img/flecha d.png" alt=""> </div> -->
+        
+         <span id="despues" onclick="dSection('next')" class="carousel-control-next-icon" aria-hidden="true"></span>		
+<!--		<div id="despues" onclick="dSection('next')"> <img src="img/flecha d.png" alt="">	</div>	-->
+    </HEADER>
+
+
+	<div id="slider">
+	
+		<SECTION class="slider" id= "home" style="display:block">
+
+			
+		</SECTION>
+
+		<SECTION class="slider" id= "servicio" style="display: none">
+				<H3>Servicios</H3>
+			 <div class="container card">
+			 		<div class="">
+						<h4>Mantemimiento.</h4>
+						<p>Limpieza general, recoleccion de hojas y objetos, aspirado, cepillado de paredes, tratamiento quimico</p>
+			 		</div>
+
+				 	<div>
+						<h4> Recuperacion. </h4>
+						<p>Este es un servicio si tenias tiempo de usar tu piscina o mal mantenimieto. Tranquilo estara como nueva.</p>
+				 	</div>
+
+				 	<div>
+						<h4> Carateo. </h4>
+						<p>Reparacion de filtracion y correcion de valdozas.</p>
+				 	</div>
+
+					<div>
+						<h4> Mantemimiento de filtro e hidroneumatico. </h4>
+						<p>
+							<ul>
+								<li>
+									Cambio de arena.
+								</li>
+								<li>
+									Prueba y reparacion de hidroneumatico.
+								</li>
+							</ul>
+						</p>
+				 	</div>
+			 </div>	
+		</SECTION>
+
+		<SECTION  class="slider" id= "about" style="display: none">
+			<h4>Sobre Nosotros</h4>
+				<p> Mas de 10 años prestando el servicio a toda Ciudad Guayana, junto a los mejores Clubes, hoteles y conjuntos residenciales que abalan nuestro trabajo. </p>
+		</SECTION>
+
+		<SECTION class="slider" id= "blog" style="display: none">
+		</SECTION>
+
+		<SECTION class="slider" id= "galeria" style="display: none">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#principal-carousel" data-slid-to="0" class="active"></li>
+                                <li data-target="#principal-carousel" data-slid-to="1"></li>
+                                <li data-target="#principal-carousel" data-slid-to="2"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/carousel1.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel2.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel3.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+
+                            <a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+		</SECTION>
+
+		<SECTION class="slider" id="contacto" style="display: none">
+			
+			<h4>Escibenos.</h4>
+			
+			<form id='form' name='form' method='post' action='suscribe.php'>
+				<div>
+					<p>
+						Nombre:> <input type="text"    placeholder="Nombre"   id="name"    required data-validation-required-message="Por favor ingresar su nombre. y apellido">
+					</p>
+				</div>
+				
+				<div>
+					<p>
+						Email:> <input type="email"    placeholder="Email"    id="email"   required data-validation-required-message="Por favor ingresar su correo.">
+					</p>
+				</div>
+				
+					<div>
+						<p>
+							Teléfono:> <input type="tel"   placeholder="Teléfono" id="phone"   required data-validation-required-message="Por favor ingresar su teléfono.">
+						</p>
+					</div>
+				
+					<div>
+						<p>
+							Mensaje:> <textarea            placeholder="Mensaje"  id="message" required data-validation-required-message="Por favor escribir su mensaje."> </textarea>
+						</p>
+					</div>
+						 <input type='submit' name='Submit' id='button' value='Suscríbete' />
+				</form>	
+		</SECTION>
+	</div>
+	
+	<FOOTER>
+		<div>	
+ 			<span>
+					<strong>Whatsapp:</strong> 04262968430
+					<strong>Correo:</strong> Frangj66@gmail.com
+			</span>
+		</div>
+		<div>
+			<ul>
+						
+				<li> 
+					<a target="_blank" href="https://www.facebook.com/francisco.gutierrez.355138"> Facebook </a>
+				</li>
+						
+				<li>
+					<a target="_blank" href="https://www.twitter.com/pacho66/"> Twitter </a> 
+                </li>
+						
+			</ul>
+				</div>
+					<span class="copyright">Copyright &copy; Fran Piscinas 2017</span>
+				</div>
+		</div>
+	</FOOTER>
+
+			
+<script>
+	alertSize();
+		function alertSize() 
+	{ 
+	  var myWidth = 0, myHeight = 0; 
+	  if( typeof( window.innerWidth ) == 'number' )
+	 { 
+	    //No-IE 
+	    myWidth = window.innerWidth; 
+	    myHeight = window.innerHeight; 
+
+	  } 
+	  else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) )
+	  {
+	    //IE 6+ 
+	    myWidth = document.documentElement.clientWidth; 
+	    myHeight = document.documentElement.clientHeight; 
+	  } 
+	  else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) 
+	  {
+	    //IE 4 compatible 
+	    myWidth = document.body.clientWidth; 
+	    myHeight = document.body.clientHeight; 
+	  } 
+	  
+	    var display;
+		var card_menu = document.getElementById("card_menu");
+		display = card_menu.style.display;
+
+		if (myHeight < 767)
+		 {
+		 	card_menu.style.display="none";
+		 }
+		 else
+		 {
+		 	card_menu.style.display"block";
+
+		 }
+
+
+	} 
+
+	function DisplayMenu()
+	{
+		var display;
+		var card_menu = document.getElementById("card_menu");
+		display = card_menu.style.display;
+
+		if (display == "none") 
+		{
+			card_menu.style.display= "block";
+		}
+		else
+		{
+			card_menu.style.display = "none";
+		}
+	}
+
+	function navSect(nav)
+	{
+		var sections= new Array(6);
+		sections[0] = "home";
+		sections[1] = "servicio";
+		sections[2] = "about";
+		sections[3] = "blog";
+		sections[4] = "galeria";
+		sections[5] = "contacto";
+
+		var buscar;
+		var show ;
+		var bkgr_body; 
+		var bkgr_menu;
+		for (var i = 0; i < 5; i++)
+		 {
+			buscar = document.getElementById(sections[i]);
+			buscar.style.display = "none";
+
+			if (sections[i]==nav) 
+			{
+				buscar.style.display = "block";
+
+				if (sections[i]=="home") 
+				{
+				bkgr_body = "#3682BF";
+				bkgr_menu = "#3682BF";
+				} 
+				else
+				{
+					bkgr_body ="#f1f1f1";
+					bkgr_menu ="#29abe2";
+				}
+					buscar.style.background = bkgr_body;
+					/*var menu = document.getElementsByTagName("header")[0];
+					menu.style.background= bkgr_menu;*/
+			}
+		 }
+
+}
+
+	function dSection(nav) 
+	{
+
+		var sections= new Array(6);
+		sections[0] = "home";
+		sections[1] = "servicio";
+		sections[2] = "about";
+		sections[3] = "blog";
+		sections[4] = "galeria";
+		sections[5] = "contacto";
+
+		var buscar;
+		var show ;
+		
+		for (var i = 0; i<6; i++) 
+		{
+			buscar= document.getElementById(sections[i]);	
+			show=buscar.style.display;	
+				
+			if (show == "block") 
+			{   
+				buscar.style.display="none";	
+				if (nav == "next")
+				 {
+				 	i++;
+				 	if(i>5) i=0;
+				 }
+
+				 if (nav == "prev") 
+				 {
+				 	i--;
+				 	if(i<0) i=5;
+				 }
+				buscar = document.getElementById(sections[i]);
+				buscar.style.display="block";
+				break;
+			}
+		}
+	if (sections[i]=="home") 
+	{
+		bkgr_body = "#3682BF";
+		bkgr_menu = "#3682BF";
+	} else
+		{
+			bkgr_body ="#f1f1f1";
+			bkgr_menu ="#29abe2";
+		}
+	buscar.style.background = bkgr_body;
+	/*var menu = document.getElementsByTagName("header")[0];
+	menu.style.background= bkgr_menu;*/
+	}
+</script>
+	
+	
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
